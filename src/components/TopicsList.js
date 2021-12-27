@@ -13,6 +13,9 @@ function TopicListItem({ topic, handleClick }) {
 }
 
 function TopicsList({ data, setTopic }) {
+  const sorted = data.relatedTopics.sort((a, b) =>
+    a.stargazerCount > b.stargazerCount ? -1 : 1
+  );
   return (
     <>
       <div className="flex items-baseline justify-between border-b border-gray-300 pb-5 font-bold">
@@ -22,7 +25,7 @@ function TopicsList({ data, setTopic }) {
         </h2>
       </div>
       <ul className="py-10 text-lg">
-        {data.relatedTopics.map((item) => (
+        {sorted.map((item) => (
           <TopicListItem topic={item} key={item.id} handleClick={setTopic} />
         ))}
       </ul>
