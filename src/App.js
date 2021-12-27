@@ -55,7 +55,7 @@ function App() {
   };
 
   return (
-    <div className="bg-purple-600 py-10 min-w-full h-screen flex justify-center">
+    <div className="bg-gradient-to-br from-purple-700 to-purple-600 py-10 min-w-full h-screen flex justify-center">
       <div className="w-3/4">
         <Header />
         <SearchBar handleSubmit={handleSubmit} name={name} />
