@@ -30,4 +30,5 @@ Feel free to elaborate on how you would improve any of the following topics
 
 - Refactoring: none
 
-- Additional Features: It might be nice to include some info about each topic like a description of each library. Also, a link to the Github repo
+- Additional Features: It might be nice to include some info about each topic like a description of each library. Also, a link to the Github repo.
+- Extra unit testing would be included as well I just ran out of time
