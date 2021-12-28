@@ -9,6 +9,10 @@
 
 > Copy `env.template` and rename it `.env.local` then add your Github API key to the value `REACT_APP_GITHUB_API_TOKEN`
 
+### `npm install`
+
+After cloning the repo the first time
+
 ### `npm start`
 
 Runs the app in the development mode.\
