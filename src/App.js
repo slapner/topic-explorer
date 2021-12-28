@@ -7,7 +7,7 @@ import { TopicsQuery } from './graphql/queries';
 
 // Single-use local components
 const Loading = () => (
-  <div className="p-10">
+  <div className="text-xl bg-white rounded-lg py-4 px-8 shadow-xl shadow-purple-900 border border-purple-700">
     <h2 className="text-2xl">Loading...</h2>
   </div>
 );
@@ -47,15 +47,11 @@ function App() {
         content = <TopicsList data={data.topic} setTopic={setTopic} />;
     }
 
-    return (
-      <div className="bg-white rounded-lg w-full my-10 px-10 py-5 shadow-md">
-        {content}
-      </div>
-    );
+    return <div className="w-full my-10 py-5">{content}</div>;
   };
 
   return (
-    <div className="bg-gradient-to-br from-purple-700 to-purple-600 py-10 min-w-full h-screen flex justify-center">
+    <div className="bg-gradient-to-br from-purple-800 to-purple-600 py-10 min-w-full h-screen flex justify-center">
       <div className="w-3/4">
         <Header />
         <SearchBar handleSubmit={handleSubmit} name={name} />

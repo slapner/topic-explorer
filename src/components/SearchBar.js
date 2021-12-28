@@ -6,7 +6,7 @@ function SearchBar({ name, handleSubmit }) {
 
   return (
     <form
-      className="flex shadow-md"
+      className="flex shadow-xl shadow-purple-900"
       onSubmit={(ev) => handleSubmit(ev, inputRef.current.value)}
     >
       <input
